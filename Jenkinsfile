@@ -21,10 +21,11 @@ pipeline{
                 sh ./gradlew npm_start
             }
         }
-        stage("Archives the dist/trainSchedule.zip artifact.")
+        stage("Archives the dist/trainSchedule.zip artifact."){
             steps{
                 echo "========Archiving========"
                 sh zip dist/trainSchedule.zip dist/trainSchedule
             }
+        }     
     }
 }
