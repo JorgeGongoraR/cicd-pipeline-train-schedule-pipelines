@@ -11,7 +11,7 @@ pipeline{
         stage("Run the app"){
             steps{
                 echo "========running the app========"
-                sh './gradlew npm_start'
+                sh './gradlew npm start'
             }
         }
         stage("Archives the dist/trainSchedule.zip artifact."){
