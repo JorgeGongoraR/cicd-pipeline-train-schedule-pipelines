@@ -12,13 +12,13 @@ pipeline{
         stage("Executes the gradle build"){
             steps{
                 echo "========executing glade build========"
-                sh ./gradlew build --no-daemon
+                sh './gradlew build --no-daemon'
             }
         }
         stage("Run the app"){
             steps{
                 echo "========running the app========"
-                sh ./gradlew npm_start
+                sh './gradlew npm_start'
             }
         }
         stage("Archives the dist/trainSchedule.zip artifact."){
