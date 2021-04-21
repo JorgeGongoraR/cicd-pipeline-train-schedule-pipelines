@@ -1,9 +1,5 @@
 pipeline{
     agent any
-  
-    options {
-        timeout(time: 2, unit: 'MINUTES')
-    }
 
     stages{
         stage("Executes the gradle build"){
