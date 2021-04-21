@@ -1,9 +1,6 @@
 pipeline{
     agent any
-    tools {
-        glade "1.36"
-    }
-    
+  
     options {
         timeout(time: 2, unit: 'MINUTES')
     }
