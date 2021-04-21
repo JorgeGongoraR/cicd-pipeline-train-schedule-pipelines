@@ -24,7 +24,7 @@ pipeline{
         stage("Archives the dist/trainSchedule.zip artifact."){
             steps{
                 echo "========Archiving========"
-                sh zip dist/trainSchedule.zip dist/trainSchedule
+                archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }     
     }
